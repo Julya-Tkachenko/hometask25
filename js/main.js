@@ -13,7 +13,6 @@ form.addEventListener('submit', (event) => {
         const appendIt = document.createElement('li');
         appendIt.innerHTML = '<input type="checkbox">' + formInput + ' <button class="todo-item__delete">Видалити</button>';
         appendIt.classList.add('todo-item');
-        appendIt.prepend();
         ulParentWrapper.append(appendIt);
         formInputArr.push(formInput);
         localStorage.setItem('todo-list', JSON.stringify(formInputArr));
